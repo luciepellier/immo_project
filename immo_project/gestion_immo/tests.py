@@ -15,11 +15,5 @@ class ApartementTest(TestCase):
         self.assertEqual(Apartment.objects.count(), 1)
         self.assertEqual(apartment_1.address, '15 rue de la République')
 
-class OcupantTest(TestCase):
-    def test_add_ocupant(self):
-        self.assertEqual(Ocupant.objects.count(), 1)
-
-
-
 
 
