@@ -1,5 +1,5 @@
 from django.test import TestCase
-from .models import Apartment
+from .models import Apartment, Ocupant
 
 # Create your tests here.
 
@@ -17,7 +17,7 @@ class ApartementTest(TestCase):
 
 class OcupantTest(TestCase):
     def test_add_ocupant(self):
-        self.assertEqual(Apartment.objects.count(), 1)
+        self.assertEqual(Ocupant.objects.count(), 1)
 
 
 
